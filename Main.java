@@ -4,28 +4,28 @@ import java.util.Scanner;
 
 public class Main {
     String teleskopType;
-    int newTelescope;
-    int secondHand;
+    int brandNewTelescope;
+    int secondHandTelescope;
     String ID;
-    String ds, ss, land;
+    String deepSpaceObjects, solarSystemObjects, landscaping;
 
     //konstruktor na którym opiera sie wprowadzanie modeli teleskopów.
-    public Main(String typTeleskopu, int nowyTeleskop, int uzywany, String forDs, String forSs, String forLand, String numer) {
-        teleskopType = typTeleskopu;
-        newTelescope = nowyTeleskop;
-        secondHand = uzywany;
-        ds = forDs;
-        ss = forSs;
-        land = forLand;
-        ID = numer;
+    public Main(String telescopeModel, int priceNewTelescope, int priceSecondHandTelescope, String forDeepSpace, String forSolarSystem, String forLandscaping, String numberID) {
+        teleskopType = telescopeModel;
+        brandNewTelescope = priceNewTelescope;
+        secondHandTelescope = priceSecondHandTelescope;
+        deepSpaceObjects = forDeepSpace;
+        solarSystemObjects = forSolarSystem;
+        landscaping = forLandscaping;
+        ID = numberID;
 
     }
 
     public void teleskop() {
         System.out.println("Wybrany teleskop jest to " + teleskopType);
-        System.out.println("Fabrycznie nowy kosztuje okolo " + newTelescope + " zlotych, cena uzywanych egzemplarzy to okolo " + secondHand + " zlotych");
-        System.out.println("Teleskop do obserwacji obiektow glebokiego nieba jest " + ds);
-        System.out.println("Teleskop jest " + ss + " jesli chodzi o obserwacje ukladu slonecznego i " + land + " w przypadku obserwacji naziemnych");
+        System.out.println("Fabrycznie nowy kosztuje okolo " + brandNewTelescope + " zlotych, cena uzywanych egzemplarzy to okolo " + secondHandTelescope + " zlotych");
+        System.out.println("Teleskop do obserwacji obiektow glebokiego nieba jest " + deepSpaceObjects);
+        System.out.println("Teleskop jest " + solarSystemObjects + " jesli chodzi o obserwacje ukladu slonecznego i " + landscaping + " w przypadku obserwacji naziemnych");
 
 
     }
