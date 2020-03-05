@@ -75,6 +75,8 @@ public class Main {
             default:
                 System.out.println("wybrales zly numer");
 
+        TelescopeClass addingTelescope = new TelescopeClass();
+        addingTelescope.addTelescope();
 
         }
     }
